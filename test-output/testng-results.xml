@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="20" passed="8" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-12T11:59:56 IST" name="Suite" finished-at="2024-11-12T12:04:05 IST" duration-ms="248632">
+    <groups>
+    </groups>
+    <test started-at="2024-11-12T11:59:56 IST" name="TestChrome" finished-at="2024-11-12T12:02:07 IST" duration-ms="130659">
+      <class name="com.RoofRocketai.Testcases.LoginPageTest">
+        <test-method is-config="true" signature="driverInitialize(java.lang.String)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13]" started-at="2024-11-12T11:59:56 IST" name="driverInitialize" finished-at="2024-11-12T12:00:00 IST" duration-ms="4312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialize -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13]" started-at="2024-11-12T12:00:00 IST" name="getParameterName" finished-at="2024-11-12T12:00:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b8aebd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method signature="verifySignIn()[pri:1, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13]" started-at="2024-11-12T12:00:00 IST" name="verifySignIn" finished-at="2024-11-12T12:00:28 IST" duration-ms="27415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignIn -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13]" started-at="2024-11-12T12:00:28 IST" name="getResult" finished-at="2024-11-12T12:00:28 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySignIn status=SUCCESS method=LoginPageTest.verifySignIn()[pri:1, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyInvalidSignIn()[pri:2, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13]" started-at="2024-11-12T12:00:28 IST" name="verifyInvalidSignIn" finished-at="2024-11-12T12:00:31 IST" duration-ms="3057" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[*** Signin is not successful for invalid credentials. Verify !!! ***
+ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: *** Signin is not successful for invalid credentials. Verify !!! ***
+ expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.RoofRocketai.Testcases.LoginPageTest.verifyInvalidSignIn(LoginPageTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidSignIn -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13]" started-at="2024-11-12T12:00:28 IST" name="getParameterName" finished-at="2024-11-12T12:00:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b8aebd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13]" started-at="2024-11-12T12:00:31 IST" name="getResult" finished-at="2024-11-12T12:00:31 IST" duration-ms="385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidSignIn status=FAILURE method=LoginPageTest.verifyInvalidSignIn()[pri:2, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@5656be13]" started-at="2024-11-12T12:00:31 IST" name="driverClose" finished-at="2024-11-12T12:00:32 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- com.RoofRocketai.Testcases.LoginPageTest -->
+      <class name="com.RoofRocketai.Testcases.NavigatePageTest">
+        <test-method is-config="true" signature="driverInitialize(java.lang.String)[pri:0, instance:com.RoofRocketai.Testcases.NavigatePageTest@34123d65]" started-at="2024-11-12T12:00:32 IST" name="driverInitialize" finished-at="2024-11-12T12:00:35 IST" duration-ms="3531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialize -->
+        <test-method signature="getAllMenu()[pri:1, instance:com.RoofRocketai.Testcases.NavigatePageTest@34123d65]" started-at="2024-11-12T12:00:35 IST" name="getAllMenu" finished-at="2024-11-12T12:01:38 IST" duration-ms="62541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllMenu -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.NavigatePageTest@34123d65]" started-at="2024-11-12T12:00:35 IST" name="getParameterName" finished-at="2024-11-12T12:00:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b8aebd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:com.RoofRocketai.Testcases.NavigatePageTest@34123d65]" started-at="2024-11-12T12:01:38 IST" name="driverClose" finished-at="2024-11-12T12:01:38 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.NavigatePageTest@34123d65]" started-at="2024-11-12T12:01:38 IST" name="getResult" finished-at="2024-11-12T12:01:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAllMenu status=SUCCESS method=NavigatePageTest.getAllMenu()[pri:1, instance:com.RoofRocketai.Testcases.NavigatePageTest@34123d65] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.RoofRocketai.Testcases.NavigatePageTest -->
+      <class name="com.RoofRocketai.Testcases.UserCreateFormPageTest">
+        <test-method is-config="true" signature="driverInitialize(java.lang.String)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:01:38 IST" name="driverInitialize" finished-at="2024-11-12T12:01:42 IST" duration-ms="3678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialize -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:01:42 IST" name="getParameterName" finished-at="2024-11-12T12:01:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b8aebd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method signature="verifyValidUser()[pri:1, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:01:42 IST" name="verifyValidUser" finished-at="2024-11-12T12:01:57 IST" duration-ms="15196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidUser -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:01:57 IST" name="getResult" finished-at="2024-11-12T12:01:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidUser status=SUCCESS method=UserCreateFormPageTest.verifyValidUser()[pri:1, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:01:57 IST" name="getParameterName" finished-at="2024-11-12T12:01:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b8aebd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method signature="verifyInvalidUser()[pri:2, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:01:57 IST" name="verifyInvalidUser" finished-at="2024-11-12T12:02:00 IST" duration-ms="2711" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User: Saraswathi  Devi is not added previously. Create User !!!
+ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User: Saraswathi  Devi is not added previously. Create User !!!
+ expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.RoofRocketai.Testcases.UserCreateFormPageTest.verifyInvalidUser(UserCreateFormPageTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUser -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:02:00 IST" name="getResult" finished-at="2024-11-12T12:02:00 IST" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidUser status=FAILURE method=UserCreateFormPageTest.verifyInvalidUser()[pri:2, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:02:00 IST" name="getParameterName" finished-at="2024-11-12T12:02:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b8aebd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method signature="verifyUserFormMissingDetails()[pri:3, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:02:00 IST" name="verifyUserFormMissingDetails" finished-at="2024-11-12T12:02:06 IST" duration-ms="6382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserFormMissingDetails -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:02:06 IST" name="getResult" finished-at="2024-11-12T12:02:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserFormMissingDetails status=SUCCESS method=UserCreateFormPageTest.verifyUserFormMissingDetails()[pri:3, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@59474f18]" started-at="2024-11-12T12:02:06 IST" name="driverClose" finished-at="2024-11-12T12:02:07 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- com.RoofRocketai.Testcases.UserCreateFormPageTest -->
+    </test> <!-- TestChrome -->
+    <test started-at="2024-11-12T12:02:07 IST" name="TestEdge" finished-at="2024-11-12T12:04:05 IST" duration-ms="117935">
+      <class name="com.RoofRocketai.Testcases.LoginPageTest">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T11:59:56 IST" name="reportSetup" finished-at="2024-11-12T11:59:56 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSetup -->
+        <test-method is-config="true" signature="driverInitialize(java.lang.String)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:02:07 IST" name="driverInitialize" finished-at="2024-11-12T12:02:09 IST" duration-ms="2296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialize -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:02:09 IST" name="getParameterName" finished-at="2024-11-12T12:02:09 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@55222ee9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method signature="verifySignIn()[pri:1, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:02:09 IST" name="verifySignIn" finished-at="2024-11-12T12:02:19 IST" duration-ms="10393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignIn -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:02:19 IST" name="getResult" finished-at="2024-11-12T12:02:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySignIn status=SUCCESS method=LoginPageTest.verifySignIn()[pri:1, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyInvalidSignIn()[pri:2, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:02:19 IST" name="verifyInvalidSignIn" finished-at="2024-11-12T12:02:22 IST" duration-ms="2929" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[*** Signin is not successful for invalid credentials. Verify !!! ***
+ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: *** Signin is not successful for invalid credentials. Verify !!! ***
+ expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.RoofRocketai.Testcases.LoginPageTest.verifyInvalidSignIn(LoginPageTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidSignIn -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:02:19 IST" name="getParameterName" finished-at="2024-11-12T12:02:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@55222ee9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:02:22 IST" name="getResult" finished-at="2024-11-12T12:02:23 IST" duration-ms="373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidSignIn status=FAILURE method=LoginPageTest.verifyInvalidSignIn()[pri:2, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:02:23 IST" name="driverClose" finished-at="2024-11-12T12:02:24 IST" duration-ms="1352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="reportFlush()[pri:0, instance:com.RoofRocketai.Testcases.LoginPageTest@dd05255]" started-at="2024-11-12T12:04:05 IST" name="reportFlush" finished-at="2024-11-12T12:04:05 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportFlush -->
+      </class> <!-- com.RoofRocketai.Testcases.LoginPageTest -->
+      <class name="com.RoofRocketai.Testcases.NavigatePageTest">
+        <test-method is-config="true" signature="driverInitialize(java.lang.String)[pri:0, instance:com.RoofRocketai.Testcases.NavigatePageTest@6a78afa0]" started-at="2024-11-12T12:02:24 IST" name="driverInitialize" finished-at="2024-11-12T12:02:28 IST" duration-ms="3949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialize -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.NavigatePageTest@6a78afa0]" started-at="2024-11-12T12:02:28 IST" name="getParameterName" finished-at="2024-11-12T12:02:28 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@55222ee9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method signature="getAllMenu()[pri:1, instance:com.RoofRocketai.Testcases.NavigatePageTest@6a78afa0]" started-at="2024-11-12T12:02:28 IST" name="getAllMenu" finished-at="2024-11-12T12:03:32 IST" duration-ms="64213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllMenu -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:com.RoofRocketai.Testcases.NavigatePageTest@6a78afa0]" started-at="2024-11-12T12:03:32 IST" name="driverClose" finished-at="2024-11-12T12:03:34 IST" duration-ms="1463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.NavigatePageTest@6a78afa0]" started-at="2024-11-12T12:03:32 IST" name="getResult" finished-at="2024-11-12T12:03:32 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAllMenu status=SUCCESS method=NavigatePageTest.getAllMenu()[pri:1, instance:com.RoofRocketai.Testcases.NavigatePageTest@6a78afa0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.RoofRocketai.Testcases.NavigatePageTest -->
+      <class name="com.RoofRocketai.Testcases.UserCreateFormPageTest">
+        <test-method is-config="true" signature="driverInitialize(java.lang.String)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:34 IST" name="driverInitialize" finished-at="2024-11-12T12:03:39 IST" duration-ms="5030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialize -->
+        <test-method signature="verifyValidUser()[pri:1, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:39 IST" name="verifyValidUser" finished-at="2024-11-12T12:03:54 IST" duration-ms="15389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidUser -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:39 IST" name="getParameterName" finished-at="2024-11-12T12:03:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@55222ee9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:54 IST" name="getResult" finished-at="2024-11-12T12:03:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidUser status=SUCCESS method=UserCreateFormPageTest.verifyValidUser()[pri:1, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyInvalidUser()[pri:2, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:54 IST" name="verifyInvalidUser" finished-at="2024-11-12T12:03:57 IST" duration-ms="2852" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User: Saraswathi  Devi is not added previously. Create User !!!
+ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User: Saraswathi  Devi is not added previously. Create User !!!
+ expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.RoofRocketai.Testcases.UserCreateFormPageTest.verifyInvalidUser(UserCreateFormPageTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUser -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:54 IST" name="getParameterName" finished-at="2024-11-12T12:03:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@55222ee9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:57 IST" name="getResult" finished-at="2024-11-12T12:03:57 IST" duration-ms="181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidUser status=FAILURE method=UserCreateFormPageTest.verifyInvalidUser()[pri:2, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyUserFormMissingDetails()[pri:3, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:57 IST" name="verifyUserFormMissingDetails" finished-at="2024-11-12T12:04:03 IST" duration-ms="6082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserFormMissingDetails -->
+        <test-method is-config="true" signature="getParameterName(org.testng.ITestContext)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:03:57 IST" name="getParameterName" finished-at="2024-11-12T12:03:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@55222ee9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParameterName -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:04:03 IST" name="getResult" finished-at="2024-11-12T12:04:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserFormMissingDetails status=SUCCESS method=UserCreateFormPageTest.verifyUserFormMissingDetails()[pri:3, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:com.RoofRocketai.Testcases.UserCreateFormPageTest@2f4948e4]" started-at="2024-11-12T12:04:03 IST" name="driverClose" finished-at="2024-11-12T12:04:05 IST" duration-ms="1407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- com.RoofRocketai.Testcases.UserCreateFormPageTest -->
+    </test> <!-- TestEdge -->
+  </suite> <!-- Suite -->
+</testng-results>
